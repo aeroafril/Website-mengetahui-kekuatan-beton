@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Prediksi Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Kekuatan Beton</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
@@ -10,23 +11,23 @@
         <h2>Form Prediksi Data Baru</h2>
         <form id="predictionForm">
             <div class="formColumns">
-                <label for="x1">Cement</label>
+                <label for="x1">Cement (kg in a m^3 mixture)</label>
                 <input type="text" inputmode="decimal" id="x1" placeholder="Cement" required>
-                <label for="x2">Blast Funace Sla</label>
+                <label for="x2">Blast Funace Slag (kg in a m^3 mixture)</label>
                 <input type="text" inputmode="decimal" id="x2" placeholder="Blast Funace Slag" required>
-                <label for="x3">Fly Ash</label>
+                <label for="x3">Fly Ash (kg in a m^3 mixture)</label>
                 <input type="text" inputmode="decimal" id="x3" placeholder="Fly Ash" required>
-                <label for="x4">Water</label>
+                <label for="x4">Water (kg in a m^3 mixture)</label>
                 <input type="text" inputmode="decimal" id="x4" placeholder="Water" required>
             </div>
             <div class="formColumns">
-                <label for="x5">Superplasticizer</label>
+                <label for="x5">Superplasticizer (kg in a m^3 mixture)</label>
                 <input type="text" inputmode="decimal" id="x5" placeholder="Superplasticizer" required>
-                <label for="x6">Coarse Aggregate</label>
+                <label for="x6">Coarse Aggregate (kg in a m^3 mixture)</label>
                 <input type="text" inputmode="decimal" id="x6" placeholder="Coarse Aggregate" required>
-                <label for="x7">Fine Aggregate</label>
+                <label for="x7">Fine Aggregate (kg in a m^3 mixture)</label>
                 <input type="text" inputmode="decimal" id="x7" placeholder="Fine Aggregate" required>
-                <label for="x8">Age</label>
+                <label for="x8">Age (day)</label>
                 <input type="text" inputmode="decimal" id="x8" placeholder="Age" required>
             </div>
             <div class="buttonGroup">

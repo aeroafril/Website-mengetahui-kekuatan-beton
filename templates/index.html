@@ -9,24 +9,30 @@
     <div class="container">
         <h2>Form Prediksi Data Baru</h2>
         <form id="predictionForm">
-            <label for="x1">Cement</label>
-            <input type="text" inputmode="decimal" id="x1" placeholder="Cement" required>
-            <label for="x2">Blast Funace Sla</label>
-            <input type="text" inputmode="decimal" id="x2" placeholder="Blast Funace Slag" required>
-            <label for="x3">Fly Ash</label>
-            <input type="text" inputmode="decimal" id="x3" placeholder="Fly Ash" required>
-            <label for="x4">Water</label>
-            <input type="text" inputmode="decimal" id="x4" placeholder="Water" required>
-            <label for="x5">Superplasticizer</label>
-            <input type="text" inputmode="decimal" id="x5" placeholder="Superplasticizer" required>
-            <label for="x6">Coarse Aggregate</label>
-            <input type="text" inputmode="decimal" id="x6" placeholder="Coarse Aggregate" required>
-            <label for="x7">Fine Aggregate</label>
-            <input type="text" inputmode="decimal" id="x7" placeholder="Fine Aggregate" required>
-            <label for="x8">Age</label>
-            <input type="text" inputmode="decimal" id="x8" placeholder="Age" required>
-
-            <button type="submit">Prediksi Sekarang</button>
+            <div class="formColumns">
+                <label for="x1">Cement</label>
+                <input type="text" inputmode="decimal" id="x1" placeholder="Cement" required>
+                <label for="x2">Blast Funace Sla</label>
+                <input type="text" inputmode="decimal" id="x2" placeholder="Blast Funace Slag" required>
+                <label for="x3">Fly Ash</label>
+                <input type="text" inputmode="decimal" id="x3" placeholder="Fly Ash" required>
+                <label for="x4">Water</label>
+                <input type="text" inputmode="decimal" id="x4" placeholder="Water" required>
+            </div>
+            <div class="formColumns">
+                <label for="x5">Superplasticizer</label>
+                <input type="text" inputmode="decimal" id="x5" placeholder="Superplasticizer" required>
+                <label for="x6">Coarse Aggregate</label>
+                <input type="text" inputmode="decimal" id="x6" placeholder="Coarse Aggregate" required>
+                <label for="x7">Fine Aggregate</label>
+                <input type="text" inputmode="decimal" id="x7" placeholder="Fine Aggregate" required>
+                <label for="x8">Age</label>
+                <input type="text" inputmode="decimal" id="x8" placeholder="Age" required>
+            </div>
+            <div class="buttonGroup">
+                <button class="submit" type="submit">Prediksi Sekarang</button>
+                <button class="reset" type="reset">Reset</button>
+            </div>
         </form>
         
         <h3 id="result"></h3>

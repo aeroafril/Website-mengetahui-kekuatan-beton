@@ -1,6 +1,6 @@
 function parseDesimal(value){
     const cleaned = value.trim().replace(',', '.');
-    if(!/^-?+(\.\d+)?$/.test(cleaned)) return NaN;
+    if(!/^-?\d+(\.\d+)?$/.test(cleaned)) return NaN;
     return parseFloat(cleaned);
 }
 
@@ -25,7 +25,7 @@ document.getElementById('predictionForm').addEventListener('submit', async funct
 
         const data = await response.json();
         
-        document.getElementById('result').innerText = "Hasil Prediksi: " + data.hasil_prediksi.toLocalString('id-ID');
+        document.getElementById('result').innerText = "Hasil Prediksi: " + data.hasil_prediksi.toLocaleString('id-ID');
     }catch(error){
         console.error(`Terjadi kesalahan: ${error}`);
         alert('Gagal terhubung ke server');

@@ -25,7 +25,7 @@ document.getElementById('predictionForm').addEventListener('submit', async funct
 
         const data = await response.json();
         
-        document.getElementById('result').innerText = "Hasil Prediksi: " + data.hasil_prediksi.toLocaleString('id-ID');
+        document.getElementById('result').innerText = "Hasil Prediksi: " + data.hasil_prediksi.toLocaleString('id-ID') + " MPa";
     }catch(error){
         console.error(`Terjadi kesalahan: ${error}`);
         alert('Gagal terhubung ke server');

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediksi Model</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Prediksi Data Baru</h2>
+        <form id="predictionForm">
+            <label for="x1">Cement</label>
+            <input type="text" inputmode="decimal" id="x1" placeholder="Cement" required>
+            <label for="x2">Blast Funace Sla</label>
+            <input type="text" inputmode="decimal" id="x2" placeholder="Blast Funace Slag" required>
+            <label for="x3">Fly Ash</label>
+            <input type="text" inputmode="decimal" id="x3" placeholder="Fly Ash" required>
+            <label for="x4">Water</label>
+            <input type="text" inputmode="decimal" id="x4" placeholder="Water" required>
+            <label for="x5">Superplasticizer</label>
+            <input type="text" inputmode="decimal" id="x5" placeholder="Superplasticizer" required>
+            <label for="x6">Coarse Aggregate</label>
+            <input type="text" inputmode="decimal" id="x6" placeholder="Coarse Aggregate" required>
+            <label for="x7">Fine Aggregate</label>
+            <input type="text" inputmode="decimal" id="x7" placeholder="Fine Aggregate" required>
+            <label for="x8">Age</label>
+            <input type="text" inputmode="decimal" id="x8" placeholder="Age" required>
+
+            <button type="submit">Prediksi Sekarang</button>
+        </form>
+        
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
